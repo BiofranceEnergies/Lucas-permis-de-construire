@@ -111,15 +111,7 @@
     });
   </script>
 
-  <script src="apikey.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      let script = document.createElement('script');
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_API_KEY}&libraries=places&callback=initAutocomplete`;
-      script.async = true;
-      script.defer = true;
-      document.head.appendChild(script);
-    });
-  </script>
+  <!-- Clé visible mais restreinte (à sécuriser dans Google Cloud Console) -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPz59eSA-UkT2AzlQzXslwzt8V5uftFzM&libraries=places&callback=initAutocomplete" async defer></script>
 </body>
 </html>
